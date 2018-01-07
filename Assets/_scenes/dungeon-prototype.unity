@@ -1625,6 +1625,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraOffsetY: -0.2
   targetDungeon: {fileID: 2116279145}
+  camera: {fileID: 1764128091}
+  sensitivity: 10
+  minOrthographicSize: 1
+  maxOrthographicSize: 5
 --- !u!4 &1787350703 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4277068572194098, guid: 25b23c2c3b560d14d884e86b996720d0,
