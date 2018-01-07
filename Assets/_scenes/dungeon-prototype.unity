@@ -1625,8 +1625,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraOffsetY: -0.2
   targetDungeon: {fileID: 2116279145}
+  player: {fileID: 49596909}
   camera: {fileID: 1764128091}
-  sensitivity: 10
+  sensitivity: 5
   minOrthographicSize: 1
   maxOrthographicSize: 5
 --- !u!4 &1787350703 stripped
