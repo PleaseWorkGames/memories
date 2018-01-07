@@ -23,6 +23,7 @@ public class PortalController : MonoBehaviour {
     // Teleport the player to the target portal and update the camera
     private void OnTriggerEnter2D(Collider2D collision)
     {
+	    return; // don't teleport anymore
         if ( active && 
              collision.gameObject.CompareTag("Player"))
         {
