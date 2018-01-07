@@ -30,7 +30,8 @@ public class PortalController : MonoBehaviour {
             target.active = false; // Prevents constant teleportation
             collision.gameObject.GetComponent<Rigidbody2D>().MovePosition(target.transform.position);
 
-            this.camera.updateTarget(target.gameObject.transform.parent.gameObject.transform.parent.gameObject);
+	        var dungeon = target.gameObject.transform.parent.gameObject.transform.parent.gameObject;
+            this.camera.updateTarget(dungeon);
         }
     }
 
