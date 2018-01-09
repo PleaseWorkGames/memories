@@ -47,6 +47,9 @@ TagManager:
   - name: Background
     uniqueID: 3720018633
     locked: 0
+  - name: Dungeon
+    uniqueID: 3996232481
+    locked: 0
   - name: Foreground
     uniqueID: 731530445
     locked: 0

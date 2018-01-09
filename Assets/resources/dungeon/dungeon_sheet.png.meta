@@ -1,11 +1,20 @@
 fileFormatVersion: 2
 guid: e34a2b9da40560a44a77b95f3b07e086
-timeCreated: 1511548243
+timeCreated: 1515345729
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: dungeon-room
     21300002: portal
+    21300004: dungeon-floor-sprite
+    21300006: dungeon-topleft-sprite
+    21300008: dungeon-topright-sprite
+    21300010: dungeon-bottomleft-sprite
+    21300012: dungeon-bottomright-sprite
+    21300014: dungeon-bottom-sprite
+    21300016: dungeon-top-sprite
+    21300018: dungeon-left-sprite
+    21300020: dungeon-right-sprite
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -67,6 +76,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -76,6 +86,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -85,6 +96,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -94,6 +106,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -103,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -131,6 +145,132 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 9, y: 0, z: 9, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dungeon-floor-sprite
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 20
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dungeon-topleft-sprite
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 18
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dungeon-topright-sprite
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 18
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dungeon-bottomleft-sprite
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 6
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dungeon-bottomright-sprite
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 6
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dungeon-bottom-sprite
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dungeon-top-sprite
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 152
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dungeon-left-sprite
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 123
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dungeon-right-sprite
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 123
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
