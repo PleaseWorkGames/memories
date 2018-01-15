@@ -5,6 +5,8 @@ using UnityEngine;
 public class Memory : MonoBehaviour {
 
 	public GameObject targetDungeonMask;
+
+	public string dialogue;
 	// Use this for initialization
 	void Start () {	
 	}
@@ -20,6 +22,8 @@ public class Memory : MonoBehaviour {
 		{
 			targetDungeonMask.GetComponent<SpriteMask>().frontSortingOrder = 20;
 			this.GetComponent<SpriteRenderer>().enabled = false;
+
+			collision.gameObject.GetComponent<PlayerController>().setDialogue(dialogue);
 		}
 	}
 }

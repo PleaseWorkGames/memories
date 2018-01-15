@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
@@ -15,7 +16,10 @@ public class PlayerController : MonoBehaviour {
 
     private bool inputInterrupt;
 
+    private float prevTime;
+
     public UserInput input;
+    public Text dialogue;
 
     // Direction constants
     private const int _NORTH = 2;
@@ -31,6 +35,8 @@ public class PlayerController : MonoBehaviour {
         walking = false;
         inputInterrupt = false;
         orientation = _SOUTH;
+
+        setDialogue("Where am I?");
     }
 
     // Update is called once per frame
@@ -80,6 +86,17 @@ public class PlayerController : MonoBehaviour {
 
         animator.SetBool("walking", walking);
         animator.SetInteger("direction", orientation);
+
+        if(prevTime >= 0)
+        {
+            float currTime = Time.time;
+
+            if(currTime - prevTime > 3.0)
+            {
+                dialogue.text = "";
+                prevTime = -1;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -111,5 +128,11 @@ public class PlayerController : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collider)
     {
         input.SetManualMovement(true);
+    }
+
+    public void setDialogue(string text)
+    {
+        prevTime = Time.time;
+        dialogue.text = text;
     }
 }
