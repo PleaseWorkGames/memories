@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e34a2b9da40560a44a77b95f3b07e086
-timeCreated: 1515345729
+timeCreated: 1516161448
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -15,6 +15,7 @@ TextureImporter:
     21300016: dungeon-top-sprite
     21300018: dungeon-left-sprite
     21300020: dungeon-right-sprite
+    21300022: green-orb
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -270,6 +271,20 @@ TextureImporter:
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green-orb
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 51
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

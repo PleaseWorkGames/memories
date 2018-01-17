@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Memory : MonoBehaviour {
 
-	public GameObject targetDungeonMask;
-
+	private SpriteMask mask;
 	public string dialogue;
 	// Use this for initialization
 	void Start () {	
+		mask = this.GetComponentInChildren<SpriteMask>();
 	}
 	
 	// Update is called once per frame
@@ -20,7 +20,7 @@ public class Memory : MonoBehaviour {
 	{
 		if( collision.gameObject.CompareTag("Player"))
 		{
-			targetDungeonMask.GetComponent<SpriteMask>().frontSortingOrder = 20;
+			mask.GetComponent<SpriteMask>().frontSortingOrder = 20;
 			this.GetComponent<SpriteRenderer>().enabled = false;
 			this.GetComponent<BoxCollider2D>().enabled = false;
 			
