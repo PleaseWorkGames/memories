@@ -22,7 +22,8 @@ public class Memory : MonoBehaviour {
 		{
 			targetDungeonMask.GetComponent<SpriteMask>().frontSortingOrder = 20;
 			this.GetComponent<SpriteRenderer>().enabled = false;
-
+			this.GetComponent<BoxCollider2D>().enabled = false;
+			
 			collision.gameObject.GetComponent<PlayerController>().setDialogue(dialogue);
 		}
 	}
