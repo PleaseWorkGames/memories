@@ -10,8 +10,21 @@ public class ExitController : MonoBehaviour
             collision.gameObject.GetComponent<PlayerController>().setDialogue("Oh yeah!  Now I remember");
             this.GetComponent<SpriteRenderer>().enabled = false;
             this.GetComponent<BoxCollider2D>().enabled = false;
-            
-            // TODO - game over - fade camera to black
+            StartCoroutine(doFade());
         }
+    }
+
+    IEnumerator doFade()
+    {
+        var canvasGroup = GameObject.FindGameObjectWithTag("Fader").GetComponent<CanvasGroup>();
+        
+        while (canvasGroup.alpha < 1) {
+            var increment = Time.deltaTime / 2;
+            canvasGroup.alpha += increment;
+            yield return null;
+        }
+
+        canvasGroup.interactable = false;
+        yield return null;
     }
 }
